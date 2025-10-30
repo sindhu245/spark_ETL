@@ -19,6 +19,7 @@ import pandas as pd
 # create list of the cities present in the convert_to_list csv
 # -------------------------------------------------------------
 df_convert_to_list = pd.read_csv("./input/convert_to_list.csv").drop_duplicates()
+df_convert_to_list[['adv_platform_id']].drop_duplicates().to_csv('./output/adv_id.csv', index=False)
 # df_city = pd.read_csv("./input/city_table_pulse_migration.csv")
 # df_merge = pd.merge(df_city, df_convert_to_list, left_on=['targeting_tag'], right_on=['targeting_tag'], how='inner')
 # print(df_merge.head(25))

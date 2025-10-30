@@ -1,4 +1,4 @@
-package org.example.testing
+package org.example.testing_leadgen
 
 import java.util.Base64
 import java.nio.charset.StandardCharsets

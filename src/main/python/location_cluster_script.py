@@ -1,8 +1,9 @@
 import pandas as pd
 
 # file = open("output/new_location_cluster_insert", "w")
-# file_dup = open("output/dup_location_cluster_remove", "w")
-file_dup_2 = open("output/dup_location_cluster_remove_2", "w")
+# file_dup = open("output/location_cluster/dup_location_cluster_remove", "w")
+# file_dup_2 = open("output/location_cluster/dup_location_cluster_remove_2", "w")
+file_add_extension_lc = open("output/location_cluster/new_set_lc_for_delhi_2", "w")
 
 # chennai = 134, hyd = 316, pune = 172, mum = 129, ban = 61, delhi = 101, cal = 355, total = 1268
 chennai_cluster_city_list = ['chennai', 'tiruvallur', 'kanchipuram', 'krishnanagar', 'vellore', 'kannur', 'gandhinagar', 'ramakrishnapuram', 'avadi', 'ramanathapuram', 'vellanur', 'mugalivakkam', 'porur', 'nehrunagar', 'kattupakkam', 'perungudi', 'kalkulam', 'tiruvannamalai', 'ashoknagar', 'kovalam', 'krishnapuram', 'ayanambakkam', 'radhanagar', 'guindy', 'nagar', 'mettupalayam', 'venkatapuram', 'mangadu', 'tambaram', 'perumbakkam', 'ratnagiri', 'ponniammanmedu', 'tiruvanmiyur', 'nandanam', 'nanganallur', 'kilpauk', 'gopalapuram', 'saligramam', 'manali', 'chromepet', 'rajajinagar', 'madhavaram', 'royapettah', 'virugambakkam', 'pallavaram', 'mannivakkam', 'surai', 'maduravoyal', 'malayambakkam', 'tiruvottiyur', 'ramapuram', 'perumanallur', 'puliyur', 'sholinganallur', 'madipakkam', 'chetput', 'selaiyur', 'mylapore', 'lakshmipuram', 'vandalur', 'kelambakkam', 'kothamangalam', 'tindivanam', 'nallur', 'ponnur', 'ambattur', 'kattur', 'irungattukottai', 'sathyamangalam', 'mangalam', 'tiruttani', 'thandalam', 'pondur', 'saram', 'varanavasi', 'nandambakkam', 'arakkonam', 'kuppam', 'villivakkam', 'kallur', 'sengadu', 'jangalapalli', 'sriperumbudur', 'kotturpuram', 'nolambur', 'kovur', 'mannur', 'gingee', 'kavanur', 'adyar', 'gummidipundi', 'karasangal', 'saidapet', 'panruti', 'narasingapuram', 'palamathi', 'gudalur', 'srinivasapuram', 'tiruvallikeni', 'reddipalayam', 'vadapalani', 'kasba', 'vadakkupattu', 'devadanam', 'gunduperumbedu', 'ayyampettai', 'vallur', 'kaveripak', 'arni', 'arcot', 'ponneri', 'alathur', 'bommayarpalayam', 'auroville', 'rajanagaram', 'salur', 'polivakkam', 'morai', 'karai', 'oragadam', 'vadakarai', 'ponnankuppam', 'venkatesapuram', 'arungunam', 'mukundarayapuram', 'pallikaranai', 'sattur', 'rangapuram', 'karunguli', 'konur', 'latteri', 'sunguvarchatram', 'ganapathipuram', 'manimangalam']
@@ -86,7 +87,7 @@ print(c)
 # -----------------
 delete_lc_statement_sample = "DELETE FROM adtech_master_data.location_cluster_mapping WHERE cluster_id=(select id from adtech_master_data.location_cluster where targeting_tag = '{0}') AND location_id=(select id from adtech_master_data.city where targeting_tag = '{1}');"
 location_insert_statement_sample = "INSERT INTO adtech_master_data.location_cluster_mapping (cluster_id, location_id) VALUES ((select id from adtech_master_data.location_cluster where targeting_tag = '{0}'), (select id from adtech_master_data.city where targeting_tag = '{1}'));"
-df_dup_city_lc_state = pd.read_csv('./input/LocationClusterV2_after_remove_dedup.csv').fillna('empty')
+df_dup_city_lc_state = pd.read_csv('input/location_cluster/LocationClusterV2_after_remove_dedup.csv').fillna('empty')
 dup_city_lc_list = df_dup_city_lc_state['city_name'].values.tolist()
 df_final_pulse_city = pd.read_csv("./input/test/first.csv")
 c_s = 0
@@ -108,8 +109,8 @@ for row in df_dup_city_lc_state.itertuples():
         name = each_city.title()
         targeting_tag = 'CITY_' + name.upper().replace(" ", "_")
         remove_statement = delete_lc_statement_sample.format(cluster_map[cluster], targeting_tag)
-        file_dup_2.write(remove_statement)
-        file_dup_2.write('\n')
+        # file_dup_2.write(remove_statement)
+        # file_dup_2.write('\n')
         pass
     elif(comment == 'Chennai V2'):
         c_s += 1
@@ -117,13 +118,29 @@ for row in df_dup_city_lc_state.itertuples():
         name = each_city.title()
         targeting_tag = 'CITY_' + name.upper().replace(" ", "_")
         remove_statement = delete_lc_statement_sample.format(cluster_map[cluster], targeting_tag)
-        file_dup_2.write(remove_statement)
-        file_dup_2.write('\n')
+        # file_dup_2.write(remove_statement)
+        # file_dup_2.write('\n')
 
         insert_statement = location_insert_statement_sample.format('CLUSTER_CHE_V2', targeting_tag)
-        file_dup_2.write(insert_statement)
-        file_dup_2.write('\n')
+        # file_dup_2.write(insert_statement)
+        # file_dup_2.write('\n')
 
 # print(len(count_c))
 print(check_same_state_count)
 print(c_s)
+
+# --------------
+# Create script to add extension city to the delhi cluster
+# -----------------
+extension_new_delhi_city_cluster = ['babarpur', 'nasirpur', 'nimri', 'ranhola', 'burari', 'deoli', 'rani bagh', 'shalamar', 'baprola', 'siraspur', 'rithala', 'shahpur jat', 'hauz khas', 'mundka', 'jagatpur', 'barwala', 'patparganj', 'lajpat nagar', 'jaitpur', 'zakhira', 'yamuna vihar', 'lado sarai', 'east of kailash', 'karala', 'dindarpur', 'maidan garhi', 'seelampur', 'pahar ganj', 'timarpur', 'chaukhandi', 'maujpur', 'jhilmil', 'kakrola', 'bakoli', 'bankner', 'greater kailash', 'safdarjung enclave', 'tughlakabad', 'bhorgarh', 'ghoga', 'rani khera', 'gadaipur', 'gheora']
+extension_new_delhi_city_cluster_v2 = ['jharoda kalan', 'bawana', 'karol bagh', 'kalkaji', 'shahdara', 'mehrauli', 'samalkha', 'narela', 'darya ganj', 'chattarpur', 'najafgarh']
+df_edge_pulse_table = pd.read_csv("./input/city_table_pulse_migration.csv")
+df_edge_pulse_table['name'] = df_edge_pulse_table['name'].str.lower()
+edge_pulse_cities = df_edge_pulse_table['name'].values.tolist()
+
+for city in extension_new_delhi_city_cluster_v2:
+    city = city.lower()
+    df_each_city = df_edge_pulse_table.loc[df_edge_pulse_table['name']==city]
+    insert_statement = location_insert_statement_sample.format(cluster_map['delhi'], df_each_city.iloc[0, 3])
+    file_add_extension_lc.write(insert_statement)
+    file_add_extension_lc.write("\n")

@@ -9,10 +9,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65f27bf0-db1e-40cd-957b-e501f446f970" name="Changes" comment="Testing branch on multiple things">
+    <list default="true" id="65f27bf0-db1e-40cd-957b-e501f446f970" name="Changes" comment="pulse migration script for adding cities, lc and ssai mapping">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/org/example/testing_leadgen/internal/advertiser=Audi/ad_id=AD456/cd=2024-02-26/hour=03/Report_2024-02-26.csv.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/org/example/testing_leadgen/output/advertiser=Audi/ad_id=AD456/cd=2024-02-26/Report_2024-02-26.csv.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/org/example/testing_leadgen/output/advertiser=Nestle/ad_id=AD789/cd=2024-02-26/Report_2024-02-26.csv.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/check_lc.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/check_lc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/input/LocationClusterV2_after_remove_dedup.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/input/location_cluster/LocationClusterV2_after_remove_dedup.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/input/lcm_city_dump.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/input/location_cluster/lcm_city_dump.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/input/ssai_mapping/ssai_city_group_mapping.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/input/ssai_mapping/ssai_city_group_mapping.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/location_cluster_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/location_cluster_script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/new_city_addition_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/new_city_addition_script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/output/dup_location_cluster_remove" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/output/location_cluster/dup_location_cluster_remove" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/output/dup_location_cluster_remove_2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/output/location_cluster/dup_location_cluster_remove_2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/output/ssai_mapping/uss.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/output/ssai_mapping/uss.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/output/test_city_code_list" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/output/test_city_code_list" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/ssai_mapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/ssai_mapping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/test_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/test_check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/update_existing_cities_netacuity_codes_n_state_id.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/org/example/data/Temp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/org/example/data/Temp.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/org/example/testing/csv_read_check.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/org/example/testing/csv_read_check.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/example/testing/AdGenericLead.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/org/example/testing_leadgen/AdGenericLead.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/example/testing/csv_read_check.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/org/example/testing_leadgen/csv_read_check.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/example/testing/cte.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/org/example/testing_leadgen/cte.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/example/testing/input/load.knol.track.leadgen+0+0000000518.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/org/example/testing_leadgen/input/load.knol.track.leadgen+0+0000000518.json.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/example/testing/input/load.knol.track.leadgen+0+0000000538.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/org/example/testing_leadgen/input/load.knol.track.leadgen+0+0000000538.json.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/example/testing/input/load.knol.track.leadgen+0+0000000549.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/org/example/testing_leadgen/input/load.knol.track.leadgen+0+0000000549.json.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/example/testing/internal/advertiser=Apple/ad_id=AD12345/cd=2024-02-26/hour=01/Report_2024-02-26.csv.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/org/example/testing_leadgen/internal/advertiser=Apple/ad_id=AD12345/cd=2024-02-26/hour=01/Report_2024-02-26.csv.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/example/testing/internal/advertiser=Apple/ad_id=AD12345/cd=2024-02-26/hour=02/Report_2024-02-26.csv.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/org/example/testing_leadgen/internal/advertiser=Apple/ad_id=AD12345/cd=2024-02-26/hour=02/Report_2024-02-26.csv.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/example/testing/internal/advertiser=Apple/ad_id=AD12345/cd=2024-02-26/hour=03/Report_2024-02-26.csv.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/org/example/testing_leadgen/internal/advertiser=Apple/ad_id=AD12345/cd=2024-02-26/hour=03/Report_2024-02-26.csv.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/example/testing/internal/advertiser=Audi/ad_id=AD456/cd=2024-02-26/hour=01/Report_2024-02-26.csv.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/org/example/testing_leadgen/internal/advertiser=Audi/ad_id=AD456/cd=2024-02-26/hour=01/Report_2024-02-26.csv.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/example/testing/internal/advertiser=Audi/ad_id=AD456/cd=2024-02-26/hour=02/Report_2024-02-26.csv.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/org/example/testing_leadgen/internal/advertiser=Audi/ad_id=AD456/cd=2024-02-26/hour=02/Report_2024-02-26.csv.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/example/testing/internal/advertiser=Audi/ad_id=AD456/cd=2024-02-26/hour=03/Report_2024-02-26.csv.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/example/testing/internal/advertiser=Nestle/ad_id=AD789/cd=2024-02-26/hour=01/Report_2024-02-26.csv.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/org/example/testing_leadgen/internal/advertiser=Nestle/ad_id=AD789/cd=2024-02-26/hour=01/Report_2024-02-26.csv.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/example/testing/internal/advertiser=Nestle/ad_id=AD789/cd=2024-02-26/hour=02/Report_2024-02-26.csv.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/org/example/testing_leadgen/internal/advertiser=Nestle/ad_id=AD789/cd=2024-02-26/hour=02/Report_2024-02-26.csv.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/example/testing/internal/advertiser=Nestle/ad_id=AD789/cd=2024-02-26/hour=03/Report_2024-02-26.csv.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/org/example/testing_leadgen/internal/advertiser=Nestle/ad_id=AD789/cd=2024-02-26/hour=03/Report_2024-02-26.csv.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/example/testing/jsonBase64.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/org/example/testing_leadgen/jsonBase64.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/example/testing/output/advertiser=Apple/ad_id=AD12345/cd=2024-02-26/Report_2024-02-26.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/example/testing/output/advertiser=Apple/ad_id=AD12345/cd=2024-02-26/Report_2024-02-26.csv.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/org/example/testing_leadgen/output/advertiser=Apple/ad_id=AD12345/cd=2024-02-26/Report_2024-02-26.csv.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/example/testing/output/advertiser=Audi/ad_id=AD456/cd=2024-02-26/Report_2024-02-26.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/example/testing/output/advertiser=Audi/ad_id=AD456/cd=2024-02-26/Report_2024-02-26.csv.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/example/testing/output/advertiser=Nestle/ad_id=AD789/cd=2024-02-26/Report_2024-02-26.csv.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/example/testing/sam/sam.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/org/example/testing_leadgen/sam/sam.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/example/testing/sam/sam1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/org/example/testing_leadgen/sam/sam1.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,64 +61,98 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="word_count" />
+        <entry key="$PROJECT_DIR$" value="feature/testing" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sindhu245&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="04a514a7-467f-414d-8a34-624b33df7f92" />
+        <option name="url" value="https://github.com/sindhu245/spark_ETL.git" />
+      </UrlAndAccount>
     </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2T2waMpmNyuQQ4RJE1GPFaAZz6W" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/sindhu.patchipulusu/IdeaProjects/spark-etl/src/main/scala/org/example/testing/input",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.16545013",
-    "project.structure.side.proportion": "0.49873418",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AdGenericLead.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Temp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.check_geo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.check_neilsen_pid.executor&quot;: &quot;Run&quot;,
+    &quot;Application.creating_dw_d_id.executor&quot;: &quot;Run&quot;,
+    &quot;Python.temp_check_file.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/pulse-migration&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sindhupatchipulusu/IdeaProjects/spark_ETL/src/main/python/input/ssai_mapping&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.16545013&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.49873418&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/scala/org/example/testing/input" />
+      <recent name="$PROJECT_DIR$/src/main/python/input/ssai_mapping" />
+      <recent name="$PROJECT_DIR$/src/main/python/input/location_cluster" />
+      <recent name="$PROJECT_DIR$/src/main/python/input" />
+      <recent name="$PROJECT_DIR$/src/main/python/input/test" />
+      <recent name="$PROJECT_DIR$/src/main/python/output" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/scala/org/example/testing/sam" />
-      <recent name="$PROJECT_DIR$/src/main/scala/org/example/testing" />
-      <recent name="$PROJECT_DIR$/src/main/scala/org/example/testing/input" />
+      <recent name="$PROJECT_DIR$/src/main/python/output/location_cluster" />
+      <recent name="$PROJECT_DIR$/src/main/python/input/location_cluster" />
+      <recent name="$PROJECT_DIR$/src/main/python/output" />
+      <recent name="$PROJECT_DIR$/src/main/python/input" />
+      <recent name="$PROJECT_DIR$/src/main/python" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.csv_read_check">
+  <component name="RunManager" selected="Application.Temp">
     <configuration name="AdGenericLead" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.testing.AdGenericLead" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testing_leadgen.AdGenericLead" />
       <module name="spark-etl" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.testing.*" />
+          <option name="PATTERN" value="org.example.testing_leadgen.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,19 +163,6 @@
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="spark-etl" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SampleETL" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.SampleETL" />
-      <module name="spark-etl" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -120,8 +180,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="csv_read_check" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.testing.csv_read_check" />
+    <configuration name="check_geo" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.geo_check.check_geo" />
+      <module name="spark-etl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.geo_check.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="creating_dw_d_id" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.testing.creating_dw_d_id" />
       <module name="spark-etl" />
       <extension name="coverage">
         <pattern>
@@ -133,12 +206,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="jsonBase64" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.testing.jsonBase64" />
+    <configuration name="csv_read_check" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.testing_leadgen.csv_read_check" />
       <module name="spark-etl" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.testing.*" />
+          <option name="PATTERN" value="org.example.testing_leadgen.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,13 +221,20 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.csv_read_check" />
-        <item itemvalue="Application.AdGenericLead" />
         <item itemvalue="Application.Temp" />
-        <item itemvalue="Application.jsonBase64" />
-        <item itemvalue="Application.SampleETL" />
+        <item itemvalue="Application.AdGenericLead" />
+        <item itemvalue="Application.creating_dw_d_id" />
+        <item itemvalue="Application.check_geo" />
+        <item itemvalue="Application.csv_read_check" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_402-corretto-1.8.0_402-4caba194b151-995e55e7" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -189,6 +269,50 @@
       <workItem from="1707480487953" duration="1218000" />
       <workItem from="1708319119863" duration="20192000" />
       <workItem from="1708494280035" duration="86924000" />
+      <workItem from="1711958168448" duration="12000" />
+      <workItem from="1711958282790" duration="967000" />
+      <workItem from="1711979765957" duration="12393000" />
+      <workItem from="1712226647340" duration="3115000" />
+      <workItem from="1713108796150" duration="596000" />
+      <workItem from="1713244712538" duration="644000" />
+      <workItem from="1713865015392" duration="1204000" />
+      <workItem from="1713943155761" duration="2411000" />
+      <workItem from="1714629919930" duration="1464000" />
+      <workItem from="1720783753284" duration="1027000" />
+      <workItem from="1720897271158" duration="22039000" />
+      <workItem from="1725607804896" duration="1392000" />
+      <workItem from="1726238188148" duration="3116000" />
+      <workItem from="1726315561286" duration="2445000" />
+      <workItem from="1727099152868" duration="818000" />
+      <workItem from="1730865783798" duration="2243000" />
+      <workItem from="1732169423636" duration="5366000" />
+      <workItem from="1732518760157" duration="321754000" />
+      <workItem from="1737351384917" duration="14069000" />
+      <workItem from="1739191273223" duration="36612000" />
+      <workItem from="1742480557302" duration="14573000" />
+      <workItem from="1743766820146" duration="732000" />
+      <workItem from="1745392629514" duration="474000" />
+      <workItem from="1745393133260" duration="45099000" />
+      <workItem from="1746610093547" duration="4450000" />
+      <workItem from="1749027602570" duration="2068000" />
+      <workItem from="1749532905143" duration="598000" />
+      <workItem from="1751227659963" duration="1369000" />
+      <workItem from="1751543392422" duration="551000" />
+      <workItem from="1751566142972" duration="63000" />
+      <workItem from="1752223666829" duration="103000" />
+      <workItem from="1752223782779" duration="832000" />
+      <workItem from="1752740953421" duration="1963000" />
+      <workItem from="1753966400213" duration="23000" />
+      <workItem from="1755173662675" duration="6239000" />
+      <workItem from="1756222799649" duration="3886000" />
+      <workItem from="1756792277051" duration="889000" />
+      <workItem from="1757358555725" duration="4731000" />
+      <workItem from="1757682325172" duration="1248000" />
+      <workItem from="1758026291919" duration="636000" />
+      <workItem from="1758968689399" duration="1820000" />
+      <workItem from="1759473352832" duration="4012000" />
+      <workItem from="1759908559193" duration="3447000" />
+      <workItem from="1761713918269" duration="1810000" />
     </task>
     <task id="LOCAL-00001" summary="Testing branch on multiple things">
       <option name="closed" value="true" />
@@ -198,7 +322,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708328053477</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Change the paths according to new pc">
+      <option name="closed" value="true" />
+      <created>1711958377841</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711958377841</updated>
+    </task>
+    <task id="LOCAL-00003" summary="pulse migration script for adding cities, lc and ssai mapping">
+      <option name="closed" value="true" />
+      <created>1735040865067</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1735040865067</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +357,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Testing branch on multiple things" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing branch on multiple things" />
+    <MESSAGE value="Change the paths according to new pc" />
+    <MESSAGE value="pulse migration script for adding cities, lc and ssai mapping" />
+    <option name="LAST_COMMIT_MESSAGE" value="pulse migration script for adding cities, lc and ssai mapping" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/spark_ETL$temp_check_file.coverage" NAME="temp_check_file Coverage Results" MODIFIED="1739534167917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python" />
   </component>
 </project>

@@ -40,7 +40,7 @@ check_map = {}
 check_city_cluster = {"a":[""]}
 df_final_pulse_city = pd.read_csv("./input/test/first.csv")
 
-df_old_lcm = pd.read_csv("./input/lcm_city_dump.csv")
+df_old_lcm = pd.read_csv("input/location_cluster/lcm_city_dump.csv")
 df_old_lcm['city'] = df_old_lcm['city'].str.lower()
 old_lcm_city_list = df_old_lcm['city'].values.tolist()
 common_city_count_check = 0
@@ -98,7 +98,7 @@ for cluster in cluster_map:
                 check_cluster_match_count += 1
             else:
                 pass
-                print(cluster, common_city_list[each_city], each_city)
+                # print(cluster, common_city_list[each_city], each_city)
 
         name = each_city.title()
         targeting_tag = 'CITY_' + name.upper().replace(" ", "_")
@@ -115,7 +115,9 @@ print(check_cluster_match_count)
 print(len(common_city_list))
 print(len(set(common_city_list)))
 
+# --------------
 # old city difference check
+# --------------
 df_old_lcm = df_old_lcm.loc[~df_old_lcm['city'].isin(common_city_list.keys())]
 # df_old_lcm.to_csv("./output/lc_cities_not_in_pulse.csv", index = False)
 print(len(df_old_lcm))
@@ -140,11 +142,48 @@ for i in check_map:
         dup_map[i] = check_map[i]
         check_dup_count += check_map[i]
 
-print(check_same_state_count)
-print(c_s)
+# print(check_same_state_count)
+# print(c_s)
 
 # print(len(check_map))
 # print(len(dup_map))
 # print(check_dup_count)
 # df_dup_cluster_city.to_csv("output/dup_city_lc_state.csv")
 # df_location_cluster_mapping_insert.to_csv("output/new_lc_mapping_insert_automation.csv", sep='|', index=False)
+
+
+# --------------
+# check if the existing location cluster is matching the new delhi cities or not.
+# ---------------
+new_delhi_lc_cities = ['Gandhi Nagar','Najafgarh','Kalkaji','delhi','new delhi','kalkaji','connaught place','babarpur','nasirpur','nimri','sagarpur','ranhola','vasant kunj','burari','deoli','rani bagh','shalamar','baprola','siraspur','najafgarh','rithala','shahpur jat','hauz khas','mundka','jagatpur','mahipalpur','barwala','patparganj','lajpat nagar','shahdara','jaitpur','darya ganj','zakhira','yamuna vihar','lado sarai','east of kailash','karala','jharoda kalan','mehrauli','chattarpur','dindarpur','bawana','maidan garhi','seelampur','samalkha','pahar ganj','narela','moti bagh','timarpur','chaukhandi','munirka','maujpur','jhilmil','kakrola','bakoli','badarpur','bankner','greater kailash','karol bagh','safdarjung enclave','tughlakabad','bhorgarh','dhaula kuan','ghoga','rani khera','gadaipur','gheora']
+city_not_in_current_lcm = list()
+
+df_edge_pulse_table = pd.read_csv("./input/city_table_pulse_migration.csv")
+df_edge_pulse_table['name'] = df_edge_pulse_table['name'].str.lower()
+edge_pulse_cities = df_edge_pulse_table['name'].values.tolist()
+# c_exising_city_table = 0
+state_code = set()
+
+df_existing_lcm_table = pd.read_csv("./input/location_cluster/existing_lcm_prod_table.csv")
+df_existing_lcm_table['name'] = df_existing_lcm_table['name'].str.lower()
+df_existing_lcm_table = df_existing_lcm_table[df_existing_lcm_table['cluster_id']==55000014]
+existing_lcm_cities = df_existing_lcm_table['name'].values.tolist()
+c_exising_lcm_table = 0
+# new_delhi_list = ['gandhi nagar','babarpur', 'nasirpur', 'nimri', 'ranhola', 'burari', 'deoli', 'rani bagh', 'shalamar', 'baprola', 'siraspur', 'rithala', 'shahpur jat', 'hauz khas', 'mundka', 'jagatpur', 'barwala', 'patparganj', 'lajpat nagar', 'jaitpur', 'zakhira', 'yamuna vihar', 'lado sarai', 'east of kailash', 'karala', 'dindarpur', 'maidan garhi', 'seelampur', 'pahar ganj', 'timarpur', 'chaukhandi', 'maujpur', 'jhilmil', 'kakrola', 'bakoli', 'bankner', 'greater kailash', 'safdarjung enclave', 'tughlakabad', 'bhorgarh', 'ghoga', 'rani khera', 'gadaipur', 'gheora']
+new_delhi_list = []
+for city in new_delhi_lc_cities:
+    city = city.lower()
+    df_each_city = df_edge_pulse_table.loc[df_edge_pulse_table['name']==city]
+    state_code.add(df_each_city.iloc[0, 4])
+
+    # if(df_each_city.iloc[0, 4] == 52010036):
+    #     print(df_each_city)
+    if(city in existing_lcm_cities or city in new_delhi_list):
+        c_exising_lcm_table += 1
+    else:
+        city_not_in_current_lcm.append(city)
+
+    # print(city)
+print(city_not_in_current_lcm)
+print(c_exising_lcm_table)
+print(state_code)
